@@ -1,0 +1,14 @@
+body {
+    background-image: url(../images/super.jpg);
+    background-size: 100vw;
+    
+}
+
+@media screen and (max-width: 720px) {
+    
+    body {
+        background-image: url(../images/minisuper.jpg);
+        background-size: 100vw;
+    }
+
+}
