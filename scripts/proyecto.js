@@ -81,11 +81,14 @@ for (let compras = 1; compras <= MAXIMO; compras++) {
       break;
   }
 
-  alert("HOLA")
+
+  
+  
   if (lista.toUpperCase().trim() == "FIN") {
     break;
   }
 }
+
 
 alert("Tu lista final es: " + listaFinal)
 
@@ -107,6 +110,22 @@ if (METODO_PAGO.trim().toUpperCase() == "DEBITO") {
 } else {
   alert("No comprendo lo que me decis");
 }
+
+const HOY = new Date()
+const DIA_SORTEO = new Date (2023, 10, 20, 18, 0, 0)
+
+const DIFERENCIA_DIAS = DIA_SORTEO - HOY;
+const milisegundospordia = 86400000
+const DIAS_PARA_SORTEO = DIFERENCIA_DIAS / milisegundospordia
+const REDONDEAR_DIA = Math.round(DIAS_PARA_SORTEO)
+
+if (total > 2000) {
+  alert("Debido a su compra de +$2000 usted entro a un sorteo por un descuento del 25% en su proxima compra. Su numero de ticket es: " + Math.round(Math.random()* 100))
+  alert("El sorteo se hace 20 de Noviembre de 2023 a las 18:00hs. Faltan : " + REDONDEAR_DIA + " dias para el sorteo")
+}
+
+
+
 
 despedirse(DATOS);
 
