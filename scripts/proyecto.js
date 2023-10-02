@@ -22,7 +22,7 @@ let listaFinal = []
 
 for (let compras = 1; compras <= MAXIMO; compras++) {
   let lista = prompt(
-    " En supermercados GON usted tiene para llevarse: tomate, pollo, pescado, fideos, chocolate, agua, cerveza, hamburguesa, lechuga, milanesa, ravioles y jugo, en caso de no querer llevar nada mas diga: Fin"
+    " En supermercados GON usted tiene para llevarse: Tomate, Pollo, Pescado, Fideos, Chocolate, Agua, Cerveza, Hamburguesa, Lechuga, Milanesa, Ravioles y Jugo, en caso de no querer llevar nada mas diga: Fin"
   );
 
   
