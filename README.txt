@@ -5,6 +5,6 @@ Buenas, la idea de la preentrega es hacer una especie de cajero/supermercado uti
 
 //Preentrega 2
 
-Buenas, mi idea para la segunda entrega fue agregar un sorteo, con el math.random darle su numero para el sorteo, y con los DATE decirle cuanto faltaba para dicho sorteo, tambien agregue a los switch (usando arrays y push) de la primera Preentrega una manera de guardar lo que se pidio para ver su pedido final
+Buenas, mi idea para la segunda fue comenzar con un pequeño .find para definir quien es el socio que viene a comprar y agregar un sorteo, con el math.random darle su numero para el sorteo, y con los DATE decirle cuanto faltaba para dicho sorteo, tambien agregue a los switch (usando arrays y push) de la primera Preentrega una manera de guardar lo que se pidio para ver su pedido final
 
 

@@ -1,11 +1,20 @@
 alert("Bienvenido al cajero rapido de supermercado GON");
 
-const NOMBRE_USUARIO = prompt(
-  "Bienvenido, mi nombre es Gonzalo, ¿Usted como se llama?"
-);
-const NUMERO_SOCIO_USUARIO = parseInt(
-  prompt("me dice porfavor su numero de socio de Supermercados GON")
-);
+const numeroSocio = prompt("Buenas, usted es el socio 1, 2, 3, 4 o 5?")
+const unSocio = sociosLista.find ( (unSocio) => {
+  return (unSocio.numeroSocio.trim() === numeroSocio.trim())
+});
+
+if (unSocio) {
+
+  alert("Bienvenido " + unSocio.apellidoSocio + ", " + unSocio.nombreSocio)
+ 
+}else {
+  alert("Usted no es socio")
+}
+
+const NOMBRE_USUARIO = unSocio.nombreSocio
+const NUMERO_SOCIO_USUARIO = unSocio.numeroSocio
 let total = 0;
 const MAXIMO = 10;
 
@@ -13,10 +22,14 @@ function obtenerNumeroSocio(nombre, numero) {
   const SOCIO = nombre + ", socio n°: " + numero;
   return SOCIO;
 }
+
 function despedirse(aQuienDespido) {
   alert("Adios " + aQuienDespido);
 }
+
 const DATOS = obtenerNumeroSocio(NOMBRE_USUARIO, NUMERO_SOCIO_USUARIO);
+
+
 
 let listaFinal = []
 
@@ -130,12 +143,3 @@ if (total > 2000) {
 despedirse(DATOS);
 
 
-// console.log(Math.random() * 50);
-//SORTEO
-
-// console.log("Cuanto tiempo falta para Navida desde hoy: " + DIASPARA)
-//CUANTO FALTA PARA EL SORTEO
-
-// nombres.pop();
-// console.log(nombres); //"luis, ana , julia"
-// SACAR EL ULTIMO DE LA LISTA
