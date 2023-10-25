@@ -1,14 +1,87 @@
-body {
-    background-image: url(../images/super.jpg);
-    background-size: 100vw;
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 720px) {
-    
-    body {
-        background-image: url(../images/minisuper.jpg);
-        background-size: 100vw;
-    }
+body {
+    background-color: #004202;
+}
 
+.titulo {
+    display: block;
+    position:relative;
+    z-index: 9999999;
+    top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.super{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    height: 100px   ;
+    width: 100vw;
+
+}
+
+.boxgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10vw;
+    gap: 5px    ;
+    margin-top: 80px;
+}
+
+.box     {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    width: 100%;
+    height: 200px;
+    border: 1px black solid;
+    color: white;
+}
+
+.box2{
+    display: flex;
+    border: 1px black solid;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    justify-content: center;
+}
+
+.form-input {
+    border-color: red;
+    border-radius: 10px;
+    height: 30px;
+
+}
+
+
+.botones {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.boton{
+    background-color: #4CAF50; /* Green */
+    border: 1px black solid;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
 }
