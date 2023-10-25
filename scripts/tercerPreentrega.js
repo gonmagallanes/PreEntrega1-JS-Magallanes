@@ -1,4 +1,8 @@
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LOG-IN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 const agregarForm = document.querySelector("#agregar-form");
 const agregarInput = document.querySelector("#agregar-input");
 const agregar = document.querySelector("#agregar");
@@ -23,6 +27,9 @@ function agregarItems(e) {
     agregarForm.reset();
 }
 
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARRITO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 const tomate = document.querySelector("#tomate")
 const pollo = document.querySelector("#pollo")
