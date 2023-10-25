@@ -28,33 +28,16 @@ body {
 
 }
 
-.boxgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10vw;
-    gap: 5px    ;
-    margin-top: 80px;
-}
 
-.box     {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    background-color: #4CAF50;
-    width: 100%;
-    height: 200px;
-    border: 1px black solid;
-    color: white;
-}
 
-.box2{
-    display: flex;
-    border: 1px black solid;
-    align-items: center;
-    background-color: #4CAF50;
-    color: white;
+.form-group {
+    margin: 100px;
+    margin-left: 40vw;
+    width: 20vw;
+    padding: 50px;
+    border-radius: 20px;
     justify-content: center;
+    background-color: #4CAF50;
 }
 
 .form-input {
@@ -64,14 +47,31 @@ body {
 
 }
 
+.texth2 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
 
 .botones {
     list-style-type: none;
     display: flex;
     justify-content: center;
     margin-top: 100px;
-
+    
 }
+.listapedido {
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+
 
 .boton{
     background-color: #4CAF50; /* Green */
