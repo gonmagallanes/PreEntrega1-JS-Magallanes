@@ -2,30 +2,47 @@
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LOG-IN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+const NOMBRE_USUARIO = localStorage.getItem("usuario")
 const agregarForm = document.querySelector("#agregar-form");
 const agregarInput = document.querySelector("#agregar-input");
 const agregar = document.querySelector("#agregar");
 
-let username = localStorage.getItem("usuario")
-agregarForm.addEventListener("submit", agregarItems);
+
+
+if(NOMBRE_USUARIO == null) {
+  agregarForm.addEventListener("submit", agregarItems);
+  
+}else{
+  texth2.innerText = `¡Bienvenido ${NOMBRE_USUARIO}!` 
+}
+
+
+
+
 
 
 function agregarItems(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (agregarInput.value != "") {
-        
-        texth2.innerText = `¡Bienvenido ${agregarInput.value}!`
-        localStorage.setItem("usuario", agregarInput.value)
+  if (agregarInput.value != "") {
+      
+    texth2.innerText = `¡Bienvenido ${agregarInput.value}!`  
+    localStorage.setItem("usuario", agregarInput.value)
 
-    } else {
-        alert("Input vacío!")
-    }
-
-    agregarInput.focus();
-    agregarForm.reset();
+  } else {
+      alert("Input vacío!")
+  }  
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
