@@ -1,2 +1,4 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Preentrega n°3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Para esta preentrega cambie el codigo completo pero segui con la misma idea del supermercado, para empezar un pequeño login para que aparezca tu nombre en el inicio de la pantalla usando LocalStorage, y en la segunda parte usando los onclick, hice una especie de carrito alternativo donde puedes ir eliminando los objetos que no quieres llevar
+Para esta entrega decidi armar el mismo supermercado que las entregas anteriores pero con un texto que te da la bienvenida depende del nombre que pongas en el input.
+Por debajo de eso arme una especie de carrito donde puedes quitar cosas de él apretando el nombre del producto que quieras sacar

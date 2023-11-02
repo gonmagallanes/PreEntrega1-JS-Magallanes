@@ -14,8 +14,8 @@ if(NOMBRE_USUARIO == null) {
   
 }else{
   texth2.innerText = `¡Bienvenido ${NOMBRE_USUARIO}!` 
+  
 }
-
 
 
 
@@ -29,20 +29,8 @@ function agregarItems(e) {
     texth2.innerText = `¡Bienvenido ${agregarInput.value}!`  
     localStorage.setItem("usuario", agregarInput.value)
 
-  } else {
-      alert("Input vacío!")
-  }  
+  }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
