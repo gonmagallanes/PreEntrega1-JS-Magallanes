@@ -1,13 +1,10 @@
 
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LOG-IN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 const NOMBRE_USUARIO = localStorage.getItem("usuario")
 const agregarForm = document.querySelector("#agregar-form");
 const agregarInput = document.querySelector("#agregar-input");
 const agregar = document.querySelector("#agregar");
-
-
 
 if(NOMBRE_USUARIO == null) {
   agregarForm.addEventListener("submit", agregarItems);
@@ -16,10 +13,6 @@ if(NOMBRE_USUARIO == null) {
   texth2.innerText = `¡Bienvenido ${NOMBRE_USUARIO}!` 
   
 }
-
-
-
-
 
 function agregarItems(e) {
   e.preventDefault();
@@ -32,8 +25,6 @@ function agregarItems(e) {
   }
 }
 
-
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARRITO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 const tomate = document.querySelector("#tomate")
@@ -42,8 +33,6 @@ const pescado = document.querySelector("#pescado")
 const fideo = document.querySelector("#fideo")
 const agua = document.querySelector("#agua")
 const listado = document.querySelector("#listado")
-
-
 
 tomate.addEventListener("click", eliminarTomate)
 
