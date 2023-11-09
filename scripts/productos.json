@@ -1,0 +1,8 @@
+[
+    {"id": "tomate", "nombre": "Tomate", "precio": 500},
+    {"id": "pollo", "nombre": "Pollo", "precio": 800},
+    {"id": "pescado", "nombre": "Pescado", "precio": 900},
+    {"id": "agua", "nombre": "Agua", "precio": 200},
+    {"id": "asado", "nombre": "Asado", "precio": 1300},
+    {"id": "fideos", "nombre": "Fideos", "precio": 400}
+]

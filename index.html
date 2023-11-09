@@ -8,14 +8,33 @@
         <link rel="shortcut icon" href="./images/super.jpg" type="image/x-icon">
     </head>
     <body>
+        <header>
+            <div class="mainHeader">
+                <h1>Supermercado GON</h1>
+                <div class="botonesSesion">
+                    <a style="color: white; text-decoration: none;" href="./pages/login.html"><h3>Iniciar Sesión</h3></a>
+                    <a style="color: white; text-decoration: none;" href="./pages/signin.html"><h3>Registrarse</h3></a>
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </header>
         <main>
-            <div>
-                <h1 class="titulo">SUPERMERCADO GON</h1>
-                <img class="super" src="./images/super.jpg" alt="Supermercado">
+            
+            <div class="col">
+                <div class="productosIndex">
+                    <h2 class="tituloProductos" id="titulo">Productos:</h2>
+                    <ul class="indexListaProductos" id="lista-productos">
+                    </ul>
+                </div>
+                
+
+                
             </div>
 
-            
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <ul class="lista" id="agregar">
                     <div id="eso">
                         <h2>Como te Llamas?</h2>
@@ -32,7 +51,7 @@
                       
     
                 </ul>
-            </div>
+            </div> -->
 
             
             
@@ -62,6 +81,7 @@
            
         </main>
         <script src="./scripts/tercerPreentrega.js"></script>
+        <script src="./scripts/productos.json"></script>
         
     </body>
 </html>
