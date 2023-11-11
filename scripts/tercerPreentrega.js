@@ -2,11 +2,11 @@
 
 const botonesSesion = document.querySelector("#botonesSesion")
 
-console.log(botonesSesion.innerHTML);
+
 
 const usernameIndex = localStorage.getItem("nombre de usuario")
 
-console.log(usernameIndex);
+
 
 if(usernameIndex !== "" && usernameIndex !== null){
   botonesSesion.innerHTML = `<h3>¡Bienvenido/a, ${usernameIndex}!</h3> <input class="botonesCarro2" id="salirDeSesion" type="button" value="Salir de la cuenta"> `
