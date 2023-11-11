@@ -9,13 +9,17 @@ body {
     background-color: #606c38;
 }
 
+.bodyIndex{
+    background-color: #606c38;
+}
+
 .titulo {
     display: block;
     position:relative;
     z-index: 9999999;
     top: 30px;
     text-align: center;
-    color: white;
+    color: #fefae0;
 }
 
 .super{
@@ -34,14 +38,17 @@ body {
     padding-left: 10px;
     height: 100px;
     gap: 50px  ;
-    color: white;
+    color: #fefae0;
     background-color: #283618;
+    
 }
 
 .botonesSesion{
    display: flex;
    gap: 15px ;
    margin-left: 50vw;
+   margin-right: 50px;
+   align-items: center;
     
 }
 
@@ -50,8 +57,36 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
-    color: white;
+    color: #fefae0;
     
+}
+
+.flexCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 20vw;
+    margin-right: 18vw;
+    width:50vw;
+    background-color: #283618;
+    color: #fefae0;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    
+}
+
+.gridCarrito{
+    display: grid;
+    width: 300px;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.carritoIndex {
+    margin-top:  50px;
 }
 
 .tituloProductos{
@@ -59,6 +94,13 @@ body {
     margin-left: 5vw;
     text-decoration: underline;
     margin-bottom: 10px;
+}
+
+.pedidosIndex{
+    
+    color: #fefae0;
+    list-style: circle;
+    font-size: 1.5rem;
 }
 
 .indexListaProductos{
@@ -85,7 +127,7 @@ body {
     border-radius: 20px;
     justify-content: center;
     background-color: #283618;
-    color: white;
+    color: #fefae0;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
 }
@@ -111,7 +153,7 @@ body {
 }
 .listapedido {
     margin-top: 30px;
-    color: white;
+    color: #fefae0;
     display: flex;
     flex-direction: column;
     padding-left: 10vw;
@@ -125,7 +167,7 @@ body {
 
 .boton{
     background-color: #283618;
-    color: white;
+    color:#fefae0;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
     padding: 15px 32px;
@@ -136,12 +178,19 @@ body {
     margin: 5px;
 }
 
+.botonesCarro{
+    background-color: #fefae0; 
+    border-radius: 15px; 
+    border: 2px solid #606c38; 
+    box-shadow: 3px 3px 3px black;
+}
+
 .main-body {
     background-color: #606c38;
 }
 
 .main-header{
-    color: white;
+    color: #fefae0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +200,7 @@ body {
 
 
 .recuadroSignIn{
-    color: white;
+    color: #fefae0;
     background-color: #283618;
     display: flex;
     border-radius: 10px;

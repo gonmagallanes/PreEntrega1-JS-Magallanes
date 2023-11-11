@@ -17,107 +17,104 @@ function mostrarProductos(productos) {
   })
 }
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LOG-IN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-// const NOMBRE_USUARIO = localStorage.getItem("usuario")
-// const agregarForm = document.querySelector("#agregar-form");
-// const agregarInput = document.querySelector("#agregar-input");
-// const agregar = document.querySelector("#agregar");
-
-// if(NOMBRE_USUARIO == null) {
-//   agregarForm.addEventListener("submit", agregarItems);
-  
-// }else{
-//   texth2.innerText = `¡Bienvenido ${NOMBRE_USUARIO}!` 
-  
-// }
-
-// function agregarItems(e) {
-//   e.preventDefault();
-
-//   if (agregarInput.value != "") {
-      
-//     texth2.innerText = `¡Bienvenido ${agregarInput.value}!`  
-//     localStorage.setItem("usuario", agregarInput.value)
-
-//   }
-// }
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARRITO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-const tomate = document.querySelector("#tomate")
-const pollo = document.querySelector("#pollo")
-const pescado = document.querySelector("#pescado")
-const fideo = document.querySelector("#fideo")
-const agua = document.querySelector("#agua")
-const listado = document.querySelector("#listado")
 
-tomate.addEventListener("click", eliminarTomate)
+const tomateMenos = document.querySelector("#tomateMenos")
+const tomateMas = document.querySelector("#tomateMas")
 
-const listItems = document.querySelectorAll('#listado li');
-const toRemove = ['tomates'];
+const polloMenos = document.querySelector("#polloMenos")
+const polloMas = document.querySelector("#polloMas")
 
-function eliminarTomate() {
-    Array.from(listItems).forEach(listItem => {
-        if (toRemove.includes(listItem.textContent.toLowerCase())) {
-          listItem.parentNode.removeChild(listItem);
-        }
-      });
-      
-}
+const pescadoMenos = document.querySelector("#pescadoMenos")
+const pescadoMas = document.querySelector("#pescadoMas")
 
-pollo.addEventListener("click", eliminarPollo)
+const aguaMenos = document.querySelector("#aguaMenos")
+const aguaMas = document.querySelector("#aguaMas")
 
-const listItems2 = document.querySelectorAll('#listado li');
-const toRemove2 = ['pollo'];
+const asadoMenos = document.querySelector("#asadoMenos")
+const asadoMas = document.querySelector("#asadoMas")
 
-function eliminarPollo() {
-    Array.from(listItems2).forEach(listItem2 => {
-        if (toRemove2.includes(listItem2.textContent.toLowerCase())) {
-          listItem2.parentNode.removeChild(listItem2);
-        }
-      });
-      
-}
+const fideosMenos = document.querySelector("#fideosMenos")
+const fideosMas = document.querySelector("#fideosMas")
 
-pescado.addEventListener("click", eliminarPescado)
 
-const listItems3 = document.querySelectorAll('#listado li');
-const toRemove3 = ['pescado'];
+const cantidadTomates = document.querySelector("#cantidadTomates")
+const cantidadPollo = document.querySelector("#cantidadPollo")
+const cantidadPescado = document.querySelector("#cantidadPescado")
+const cantidadAgua = document.querySelector("#cantidadAgua")
+const cantidadAsado = document.querySelector("#cantidadAsado")
+const cantidadFideos = document.querySelector("#cantidadFideos")
 
-function eliminarPescado() {
-    Array.from(listItems3).forEach(listItem3 => {
-        if (toRemove3.includes(listItem3.textContent.toLowerCase())) {
-          listItem3.parentNode.removeChild(listItem3);
-        }
-      });
-      
-}
 
-fideo.addEventListener("click", eliminarFideo)
+tomateMenos.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadTomates.innerText = ""
 
-const listItems4 = document.querySelectorAll('#listado li');
-const toRemove4 = ['fideos'];
+})
+tomateMas.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadTomates.innerText = "Tomate"
 
-function eliminarFideo() {
-    Array.from(listItems4).forEach(listItem4 => {
-        if (toRemove4.includes(listItem4.textContent.toLowerCase())) {
-          listItem4.parentNode.removeChild(listItem4);
-        }
-      });
-      
-}
+})
 
-agua.addEventListener("click", eliminarAgua)
 
-const listItems5 = document.querySelectorAll('#listado li');
-const toRemove5 = ['agua'];
+polloMenos.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadPollo.innerText = ""
 
-function eliminarAgua() {
-    Array.from(listItems5).forEach(listItem5 => {
-        if (toRemove5.includes(listItem5.textContent.toLowerCase())) {
-          listItem5.parentNode.removeChild(listItem5);
-        }
-      });
-      
-}
+})
+polloMas.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadPollo.innerText = "Pollo"
+
+})
+
+
+pescadoMenos.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadPescado.innerText = ""
+
+})
+pescadoMas.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadPescado.innerText = "Pescado"
+
+})
+
+
+aguaMenos.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadAgua.innerText = ""
+
+})
+aguaMas.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadAgua.innerText = "Agua"
+
+})
+
+
+asadoMenos.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadAsado.innerText = ""
+
+})
+asadoMas.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadAsado.innerText = "Asado"
+
+})
+
+
+fideosMenos.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadFideos.innerText = ""
+
+})
+fideosMas.addEventListener("click" , function(e)  {
+  e.preventDefault()
+  cantidadFideos.innerText = "Fideos"
+
+})
+

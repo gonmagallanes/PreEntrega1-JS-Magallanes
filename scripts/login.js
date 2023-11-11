@@ -7,6 +7,8 @@ const usernameLogIn = document.querySelector("#usernameLogIn");
 const passwordLogIn = document.querySelector("#passwordLogIn");
 const registro = document.querySelector("#registrarse")
 
+
+
 registro.addEventListener("click", function(e){
     e.preventDefault();
     window.location.href = "./signin.html";

@@ -6,14 +6,16 @@
         <title>Supermercado GON</title>
         <link rel="stylesheet" href="./style/style.css">
         <link rel="shortcut icon" href="./images/super.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="./bootstrap.bundle.js">
+        <link rel="stylesheet" href="./bootstrap.min.css">
     </head>
-    <body>
+    <body class="bodyIndex">
         <header>
             <div class="mainHeader">
-                <h1>Supermercado GON</h1>
+                <h2 style="margin-left: 20px; align-items: center;">Supermercado GON</h2>
                 <div class="botonesSesion">
-                    <a style="color: white; text-decoration: none;" href="./pages/login.html"><h3>Iniciar Sesión</h3></a>
-                    <a style="color: white; text-decoration: none;" href="./pages/signin.html"><h3>Registrarse</h3></a>
+                    <a style="color: #fefae0; text-decoration: none;" href="./pages/login.html"><h3 style="font-size: 1.5rem;">Iniciar Sesión</h3></a>
+                    <a style="color: #fefae0; text-decoration: none;" href="./pages/signin.html"><h3 style="font-size: 1.5rem; padding-left: 15px;">Registrarse</h3></a>
                     
                     
                 </div>
@@ -23,7 +25,7 @@
         </header>
         <main>
             
-            <div class="col">
+            <div class="container">
                 <div class="productosIndex">
                     <h2 class="tituloProductos" id="titulo">Productos:</h2>
                     <ul class="indexListaProductos" id="lista-productos">
@@ -53,35 +55,57 @@
                 </ul>
             </div> -->
 
-            
-            
-            <div>
-                <ul class="botones">
-                    <input type="button" id="tomate" class="boton" value="Tomates">
-                    <input type="button" id="pollo" class="boton" value="Pollo">
-                    <input type="button" id="pescado" class="boton" value="Pescado">
-                    <input type="button" id="fideo" class="boton" value="Fideos">
-                    <input type="button" id="agua" class="boton" value="Agua">
-                    
-                </ul>
+            <div class="container">
+                <div class="flexCarrito">
+                    <div class="gridCarrito">
+                        <!-- <h1 id="tomateMenos" style="display: flex; justify-content: center; align-items: center; border: 2px solid black; border-radius: 10px; margin-left: 5px;">-</h1> -->
+                        <input class="botonesCarro" id="tomateMenos" type="button" value="-">
+                        <h2 style="display: flex; justify-content: center; align-items: center; margin-left: 5px;">Tomate</h2>
+                        <input class="botonesCarro" id="tomateMas" type="button" value="+">
+                        
+                        <input class="botonesCarro" id="polloMenos" type="button" value="-">
+                        <h2 style="display: flex; justify-content: center; align-items: center; margin-left: 5px;">Pollo</h2>
+                        <input class="botonesCarro" id="polloMas" type="button" value="+">
+                        <input class="botonesCarro" id="pescadoMenos" type="button" value="-">
+                        <h2 style="display: flex; justify-content: center; align-items: center; margin-left: 5px;">Pescado</h2>
+                        <input class="botonesCarro" id="pescadoMas" type="button" value="+">
+                        <input class="botonesCarro" id="aguaMenos" type="button" value="-">
+                        <h2 style="display: flex; justify-content: center; align-items: center; margin-left: 5px;">Agua</h2>
+                        <input class="botonesCarro" id="aguaMas" type="button" value="+">
+                        <input class="botonesCarro" id="asadoMenos" type="button" value="-">
+                        <h2 style="display: flex; justify-content: center; align-items: center; margin-left: 5px;">Asado</h2>
+                        <input class="botonesCarro" id="asadoMas" type="button" value="+">
+                        <input class="botonesCarro" id="fideosMenos" type="button" value="-">
+                        <h2 style="display: flex; justify-content: center; align-items: center; margin-left: 5px;">Fideos</h2>
+                        <input class="botonesCarro" id="fideosMas" type="button" value="+">
+                    </div>
+                </div>
+                
+                
+                
             </div>
 
-            <div class="listapedido">
-                <h3 style="color: grey;">Puedes llevar un maximo de 3 productos.</h3>
-                <h1>Sus pedidos son:</h1>
-                <ul id="listado">
-                    <li>Tomates</li>
-                    <li>Pollo</li>
-                    <li>Pescado</li>
-                    <li>Fideos</li>
-                    <li>Agua</li>
-                </ul>
+            <div class="container">
+                <div class="carritoIndex">
+                    <h1 style="color: #fefae0;">Productos a llevar: </h1>
+                    <p class="pedidosIndex" id="cantidadTomates"></p>
+                    <p class="pedidosIndex" id="cantidadPollo"></p>
+                    <p class="pedidosIndex" id="cantidadPescado"></p>
+                    <p class="pedidosIndex" id="cantidadAgua"></p>
+                    <p class="pedidosIndex" id="cantidadAsado"></p>
+                    <p class="pedidosIndex" id="cantidadFideos"></p>
+                </div>
+                
             </div>
-         
+            
+            
+            <hr style="margin-top: 30vh;">
            
         </main>
+        <script src="./scripts/login.js"></script>
+        <script src="./scripts/registro.js"></script>
         <script src="./scripts/tercerPreentrega.js"></script>
         <script src="./scripts/productos.json"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
 </html>
