@@ -18,10 +18,13 @@ registro.addEventListener("click", function(e){
 formLogIn.addEventListener("submit", function(e){
     e.preventDefault;
     if (usernameLogIn.value !== usernameLS && passwordLogIn.value !== passwordLS){
-        alert("sacala chupaverga")
+        Swal.fire({
+            title: "sacala chupaverga"
+        });
     }else{
         window.location.href = "../index.html";
         alert("ay")
     }
 })
+
 

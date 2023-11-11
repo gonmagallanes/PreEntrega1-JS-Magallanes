@@ -1,3 +1,25 @@
+////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BOTONES-SESION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+const botonesSesion = document.querySelector("#botonesSesion")
+
+console.log(botonesSesion.innerHTML);
+
+const usernameIndex = localStorage.getItem("nombre de usuario")
+
+console.log(usernameIndex);
+
+if(usernameIndex !== "" && usernameIndex !== null){
+  botonesSesion.innerHTML = `<h3>¡Bienvenido/a, ${usernameIndex}!</h3> <input class="botonesCarro2" id="salirDeSesion" type="button" value="Salir de la cuenta"> `
+}
+
+const salirDeSesion = document.querySelector("#salirDeSesion")
+
+salirDeSesion.addEventListener("click", function (e){
+  e.preventDefault();
+  window.location.href= "./pages/signin.html"
+})
+
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FETCH-PRODUCTOS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const listaProductos= document.querySelector("#lista-productos")
 

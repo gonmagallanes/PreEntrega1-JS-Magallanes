@@ -184,6 +184,15 @@ body {
     border: 2px solid #606c38; 
     box-shadow: 3px 3px 3px black;
 }
+.botonesCarro2{
+    background-color: #fefae0; 
+    border-radius: 15px; 
+    border: 2px solid #606c38; 
+    box-shadow: 3px 3px 3px black;
+    padding: 10px;
+    
+
+}
 
 .main-body {
     background-color: #606c38;
